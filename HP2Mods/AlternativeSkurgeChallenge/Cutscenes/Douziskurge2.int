@@ -1,0 +1,12 @@
+[Thread_0]
+line_0=sleep 0.1
+line_1=capture Harry
+line_2=capture basecam
+line_3=BaseCam FlyTo point5 *
+line_4=BaseCam Target FlyTo point4
+line_5=sleep .5
+line_6=BaseCam FlyTo point4 *
+line_7=BaseCam Target FlyTo point3 *
+line_8=sleep 2
+line_9=release Harry
+line_10=release BaseCam
