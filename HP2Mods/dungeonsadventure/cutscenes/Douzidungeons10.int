@@ -1,0 +1,20 @@
+[Thread_0]
+line_0=sleep 0.1
+line_1=DisablePlayerInput
+line_2=capture Harry
+line_3=capture basecam
+line_4=basecam teleport clroom1 *
+line_5=basecam target flyto clroom3
+line_6=sleep .5
+line_7=basecam flyto clroom2 *
+line_8=sleep 2
+line_9=basecam target FlyTo clroom6* time=.75
+line_10=basecam FlyTo clroom4 Time=2*
+line_11=basecam FlyTo clroom5 Time=2*
+line_12=basecam target FlyTo clroom8* time=1.5
+line_13=basecam FlyTo clroom6 Time=2*
+line_14=basecam FlyTo clroom7 Time=2*
+line_15=sleep 4
+line_16=release Harry
+line_17=EnablePlayerInput
+line_18=release basecam
