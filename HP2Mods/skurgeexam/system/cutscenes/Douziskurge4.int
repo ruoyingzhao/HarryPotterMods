@@ -1,0 +1,14 @@
+[Thread_0]
+line_0=sleep 0.1
+line_1=DisablePlayerInput
+line_2=capture Harry
+line_3=capture basecam
+line_4=BaseCam Target FlyTo metalgate2
+line_5=BaseCam FlyTo metalgate1 *
+line_6=sleep 1
+line_7=BaseCam Target FlyTo metalgate3
+line_8=BaseCam FlyTo metalgate2 *
+line_9=sleep 2
+line_10=release Harry
+line_11=EnablePlayerInput
+line_12=release BaseCam

@@ -1,0 +1,64 @@
+[Thread_0]
+line_0=capture challengescoremanager
+line_1=Cue ThreadPicker *
+line_2=WaitFor ThreadPicker
+line_3=If ChallengeJustWonFirstTime Cue WonFirstTimeThread
+line_4=If ChallengeWorseThanBefore Cue WorseThread
+line_5=If ChallengeNewBestScore Cue NewBestThread
+line_6=If ChallengeJustMastered Cue JustMasteredThread
+line_7=If ChallengePreviouslyMastered Cue MasteredThread
+[Thread_1]
+line_0=WaitFor WonFirstTimeThread
+line_1=recapture challengescoremanager
+line_2=challengescoremanager tallychallenge *TallyDone
+line_3=harry animate celebrate
+line_4=sleep 3
+line_5=waitfor TallyDone
+line_6=trigger levelexit
+line_7=sleep 1
+line_8=release challengescoremanager
+line_9=ForceFinish
+[Thread_2]
+line_0=WaitFor WorseThread
+line_1=recapture challengescoremanager
+line_2=challengescoremanager tallychallenge *TallyDone
+line_3=harry animate talk_remember
+line_4=sleep 3
+line_5=waitfor TallyDone
+line_6=trigger levelexit
+line_7=sleep 1
+line_8=release challengescoremanager
+line_9=ForceFinish
+[Thread_3]
+line_0=WaitFor NewBestThread
+line_1=recapture challengescoremanager
+line_2=challengescoremanager tallychallenge *TallyDone
+line_3=harry animate celebrate
+line_4=sleep 3
+line_5=waitfor TallyDone
+line_6=trigger levelexit
+line_7=sleep 1
+line_8=release challengescoremanager
+line_9=ForceFinish
+[Thread_4]
+line_0=WaitFor JustMasteredThread
+line_1=recapture challengescoremanager
+line_2=challengescoremanager tallychallenge *TallyDone
+line_3=harry animate celebrate
+line_4=sleep 3
+line_5=waitfor TallyDone
+line_6=trigger levelexit
+line_7=sleep 1
+line_8=release challengescoremanager
+line_9=ForceFinish
+[Thread_5]
+line_0=WaitFor MasteredThread
+line_1=recapture challengescoremanager
+line_2=challengescoremanager tallychallenge *TallyDone
+line_3=harry animate celebrate
+line_4=sleep 3
+line_5=waitfor TallyDone
+line_6=trigger levelexit
+line_7=sleep 1
+line_8=release challengescoremanager
+line_9=ForceFinish
